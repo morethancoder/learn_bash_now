@@ -2,46 +2,59 @@
 # the first video of the bash scripting playlist [arabic] 
 # https://youtube.com/playlist?list=PLWMEfLa7iqRAZOc2B3lHZvE1jFK0kDFRY
 
-#COLORS
-# Regular Colors
-Black='\033[0;30m'        # Black
-Red='\033[0;31m'          # Red
-Green='\033[0;32m'        # Green
-Yellow='\033[0;33m'       # Yellow
-Blue='\033[0;34m'         # Blue
-Purple='\033[0;35m'       # Purple
-Cyan='\033[0;36m'         # Cyan
-White='\033[0;37m'        # White
 
-# name="ali"
-# age="22"
-# echo "hi $name, this is bash!"
-# echo "you are $age years old"
+# VARIABLES
+# NAME="goku"
+# AGE="32000"
 
-#USER INPUT
-
-# echo "what is your name ?"
-# read NAME
-# #READ WITH FLAG
-# read -p "how old are you ? " AGE
-
-# echo "hello $NAME, you are $AGE years old, welcome to bash !!"
-
-
+# VARIABLES AS ARGUMENTS
 NAME=$1
 AGE=$2
 CITY=$3
 
-sleep 1
-echo -e "hello $Cyan $NAME, $White you are $Red $AGE $White years old, welcome to bash !!"
+# USER INPUT
+# echo "what is your name ? "
+# read NAME
 
-# COMMAND RESULT IN VARIABLE
+# echo "how old are you ?"
+# read AGE
+
+# COLORS 
+BL='\033[0;30m'         # Black
+R='\033[0;31m'          # Red
+G='\033[0;32m'          # Green
+Y='\033[0;33m'          # Yellow
+B='\033[0;34m'          # Blue
+P='\033[0;35m'          # Purple
+C='\033[0;36m'          # Cyan
+W='\033[0;37m'          # White
+
+# COMMANDS 
+PC=$(hostname)
+USER=$(whoami)
+WHERE=$(pwd)
 DATE=$(date)
-sleep 1
-echo -e "todays date is $Yellow $DATE $White"
 
-# WEATHER IN BASH !!!
+
+
+
 sleep 1
-echo "wether in $CITY today !!"
+echo -e "\nhello $C $NAME $W"
 sleep 1
-curl -s wttr.in/$CITY?0
+echo -e "you are using $G$PC$W machine"
+sleep 1
+echo "$NAME look, i am a script"
+sleep 1
+echo "uh huh"
+sleep 1
+echo -e "$C$NAME$W you are $Y$AGE$W years old !"
+sleep 1
+echo "have a nice day $NAME !, goodbye"
+sleep 1
+echo -e "also today is $Y$DATE$W"
+sleep 1
+echo -e "and you are working on $R$WHERE$W"
+sleep 1
+echo -e "the weather in $CITY as below !"
+# type the curl command here to excute it !!
+curl wttr.in/$CITY?0
