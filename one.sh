@@ -1,4 +1,6 @@
 #!/usr/bin/bash
+# the first video of the bash scripting playlist [arabic] 
+# https://youtube.com/playlist?list=PLWMEfLa7iqRAZOc2B3lHZvE1jFK0kDFRY
 
 #COLORS
 # Regular Colors
